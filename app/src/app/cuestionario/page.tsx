@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Cuestionario from "@/components/cuestionario/Cuestionario";
 
 export const metadata: Metadata = {
-  title: "Cuestionario | CarAdvisor",
+  title: "Cuestionario",
+  description: "Responde 8 preguntas sencillas y descubre qué coche te conviene.",
 };
 
-export default function Cuestionario() {
+export default function PaginaCuestionario() {
   return (
-    <main className="flex flex-1 flex-col items-center justify-center px-6 py-16 text-center">
-      <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-        Próximamente
-      </h1>
-      <Link
-        href="/"
-        className="mt-8 text-blue-600 underline-offset-4 hover:underline dark:text-blue-400"
-      >
-        ← Volver al inicio
-      </Link>
+    <main className="flex flex-1 flex-col px-4 py-10 sm:px-6 sm:py-16">
+      <Cuestionario />
     </main>
   );
 }
