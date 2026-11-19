@@ -1,5 +1,6 @@
 # ---------- Datos brutos (CSV enormes de la EEA, DGT...) ----------
-data-pipeline/raw/
+data-pipeline/raw/*
+!data-pipeline/raw/.gitkeep
 
 # ---------- Variables de entorno y claves (nunca a GitHub) ----------
 .env
